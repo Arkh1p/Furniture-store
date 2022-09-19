@@ -25,12 +25,22 @@ main .title-line h2 {
   font-weight: 700;
 }
 
-main .main-display .btn, footer .footer-line1 .footer-line1__form button {
+main .how-it-works-display__content .btn, main .main-display .btn, footer .footer-line1 .footer-line1__form button {
   background: #DAA520;
   color: #fff;
   height: 50px;
   font-weight: 700;
   font-style: 16px;
+}
+
+main .categories-display .category .btn {
+  border-radius: 4px;
+  width: 123px;
+  height: 40px;
+  border: 1px solid #3E3F43;
+  color: #3E3F43;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .container-fluid {
@@ -148,9 +158,6 @@ footer .footer-line3 {
   padding-bottom: 24px;
 }
 
-main {
-  height: 1000px;
-}
 main .main-display__bg {
   z-index: -1;
   width: 100%;
@@ -214,6 +221,7 @@ main .main-display .bg-logo {
 }
 main .about-us-display {
   margin-top: 144px;
+  padding-bottom: 120px;
 }
 main .about-us-display .about-us-display__content h2 {
   font-size: 36px;
@@ -239,6 +247,12 @@ main .about-us-display .about-us-display__content .bg .bg-yellow {
   background-color: #F7DEA6;
   border-radius: 0px 120px;
 }
+main .about-us-display .about-us-display__content .row2 {
+  margin-top: 170px;
+}
+main .about-us-display .about-us-display__content .row2 .col-3 {
+  height: 384px;
+}
 main .about-us-display .bg-logo {
   background: url(../img/bg-logo.png) no-repeat;
   width: 400px;
@@ -248,12 +262,69 @@ main .about-us-display .bg-logo {
   top: 400px;
   left: -68px;
 }
+main .about-us-display .bg3 {
+  background: url(../img/bg3.png) no-repeat right;
+  width: 100%;
+  height: 384px;
+  position: absolute;
+  top: 700px;
+  z-index: -1;
+}
+main .how-it-works-display__content .number h1 {
+  font-weight: 600;
+  font-size: 96px;
+  color: #FDEEEE;
+  top: 30px;
+  left: 7px;
+  z-index: -1;
+}
+main .how-it-works-display__content h2 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 20px;
+}
+main .how-it-works-display__content .btn {
+  max-width: 212px;
+  margin: auto;
+  margin-top: 64px;
+}
+main .categories-display {
+  margin-top: 120px;
+}
+main .categories-display .category {
+  border-radius: 0px 120px;
+  padding: 24px 16px 24px 0;
+  height: 400px;
+}
+main .categories-display .category h2 {
+  margin-left: 16px;
+  font-weight: 800;
+  font-size: 24px;
+  color: #3E3F43;
+}
+main .categories-display .purple {
+  background-color: #F9BDBD;
+}
+main .categories-display .yellow {
+  background-color: #F7DEA6;
+}
+main .categories-display .blue {
+  background-color: #A8DCEC;
+}
+main .testimony-display .testimony-display__content {
+  margin-top: 120px;
+}
+main .testimony-display .testimony-display__content img {
+  border-radius: 80px 0px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+}
 main .title-line {
   margin-bottom: 40px;
 }
 main .title-line hr {
-  max-width: 316px;
-  width: 27.43vw;
+  margin-left: 16px;
+  width: 100%;
   height: 1px;
   color: #000;
 }

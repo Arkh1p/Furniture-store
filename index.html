@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WOODIES</title>
-    
+    <link rel="icon" href="img/icons/favicon.svg" type="image/svg+xml">
+
+    <!-- Slick slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- CSS -->
@@ -86,9 +89,12 @@
         <div class="position-relative">
           <div class="bg-logo"></div>
         </div>
+        <div class="position-relative">
+          <div class="bg3"></div>
+        </div>
         <div class="container-fluid">
           <div class="title-line d-flex align-items-center justify-content-between">
-            <h2>
+            <h2 class="text-nowrap">
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.5 2.28571H6.28571C10.4278 2.28571 13.7857 5.64357 13.7857 9.78571V13.7857H8C3.85787 13.7857 0.5 10.4278 0.5 6.28571V2.28571Z" stroke="#897942" stroke-opacity="0.5"/>
                 <path d="M16.2143 16.2143H22C26.1421 16.2143 29.5 19.5722 29.5 23.7143V27.7143H23.7143C19.5722 27.7143 16.2143 24.3564 16.2143 20.2143V16.2143Z" stroke="#897942" stroke-opacity="0.5"/>
@@ -97,37 +103,215 @@
                 </svg>                
               Who we are
             </h2>
-            <div class="d-flex align-items-center">
-              <hr>
-              <h1>ABOUT US</h1>
-            </div>
+            <hr>
+            <h1 class="text-nowrap">ABOUT US</h1>
           </div>
-          <div class="row about-us-display__content align-items-center">
-            <div class="col-6">
-              <div class="bg">
-                <div class="bg-yellow">
+          <div class="about-us-display__content">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <div class="bg">
+                  <div class="bg-yellow">
+                  </div>
+                  <img class="position-absolute" src="img/bg2.png" alt="image">
                 </div>
-                <img class="position-absolute" src="img/bg2.png" alt="image">
+              </div>
+              <div class="col-6">
+                <h2>WOODIES <span>is the</span> home of modern wooden furniture</h2>
+                <h3>the answer to your need for furniture with shapes, sizes and colors. </h3>
               </div>
             </div>
-            <div class="col-6">
-              <h2>WOODIES <span>is the</span> home of modern wooden furniture</h2>
-              <h3>the answer to your need for furniture with shapes, sizes and colors. </h3>
+            <div class="row row2 align-items-center">
+              <div class="col-9">
+                <h2><span>Customized furniture </span>made just for you</h2>
+                <h3>Get it easy to adjust furniture to the shape and size of your dwelling or business.</h3>
+              </div>
+              <div class="col-3">
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="how-it-works-display">
-        <div class="container-fluid"></div>
+        <div class="container-fluid">
+          <div class="title-line d-flex align-items-center justify-content-between">
+            <h2 class="text-nowrap">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 2.28571H6.28571C10.4278 2.28571 13.7857 5.64357 13.7857 9.78571V13.7857H8C3.85787 13.7857 0.5 10.4278 0.5 6.28571V2.28571Z" stroke="#897942" stroke-opacity="0.5"/>
+                <path d="M16.2143 16.2143H22C26.1421 16.2143 29.5 19.5722 29.5 23.7143V27.7143H23.7143C19.5722 27.7143 16.2143 24.3564 16.2143 20.2143V16.2143Z" stroke="#897942" stroke-opacity="0.5"/>
+                <path d="M16.2143 8C16.2143 3.85787 19.5722 0.5 23.7143 0.5H27.7143V6.28571C27.7143 10.4278 24.3564 13.7857 20.2143 13.7857H16.2143V8Z" stroke="#897942" stroke-opacity="0.5"/>
+                <path d="M2.28571 23.7143C2.28571 19.5722 5.64357 16.2143 9.78571 16.2143H13.7857V22C13.7857 26.1421 10.4278 29.5 6.28571 29.5H2.28571V23.7143Z" stroke="#897942" stroke-opacity="0.5"/>
+                </svg>                
+                How to custom
+            </h2>
+            <hr>
+            <h1 class="text-nowrap">HOW IT WORKS</h1>
+          </div>
+          <div class="how-it-works-display__content">
+            <div class="row">
+              <div class="col-3">
+                <div class="number position-relative">
+                  <h1 class="position-absolute">1</h1>
+                </div>
+                <div class="image text-center">
+                  <img src="img/icons/choose-design.svg" alt="Image">
+                </div>
+                <h2 class="text-center">Choose Design</h2>
+              </div>
+              <div class="col-3">
+                <div class="number position-relative">
+                  <h1 class="position-absolute">2</h1>
+                </div>
+                <div class="image text-center">
+                  <img src="img/icons/area-measuring.svg" alt="Image">
+                </div>
+                <h2 class="text-center">Area measuring</h2>
+              </div>
+              <div class="col-3">
+                <div class="number position-relative">
+                  <h1 class="position-absolute">3</h1>
+                </div>
+                <div class="image text-center">
+                  <img src="img/icons/Budgeting.svg" alt="Image">
+                </div>
+                <h2 class="text-center">Budgeting</h2>
+              </div>
+              <div class="col-3">
+                <div class="number position-relative">
+                  <h1 class="position-absolute">4</h1>
+                </div>
+                <div class="image text-center">
+                  <img src="img/icons/production.svg" alt="Image">
+                </div>
+                <h2 class="text-center">Production</h2>
+              </div>
+            </div>
+              <a href="#" class="btn d-flex align-items-center justify-content-center">Get Personalized Now</a>
+          </div>
+        </div>
       </section>
       <section class="categories-display">
-        <div class="container-fluid"></div>
+        <div class="container-fluid">
+          <div class="title-line d-flex align-items-center justify-content-between">
+            <h2 class="text-nowrap">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 2.28571H6.28571C10.4278 2.28571 13.7857 5.64357 13.7857 9.78571V13.7857H8C3.85787 13.7857 0.5 10.4278 0.5 6.28571V2.28571Z" stroke="#897942" stroke-opacity="0.5"/>
+                <path d="M16.2143 16.2143H22C26.1421 16.2143 29.5 19.5722 29.5 23.7143V27.7143H23.7143C19.5722 27.7143 16.2143 24.3564 16.2143 20.2143V16.2143Z" stroke="#897942" stroke-opacity="0.5"/>
+                <path d="M16.2143 8C16.2143 3.85787 19.5722 0.5 23.7143 0.5H27.7143V6.28571C27.7143 10.4278 24.3564 13.7857 20.2143 13.7857H16.2143V8Z" stroke="#897942" stroke-opacity="0.5"/>
+                <path d="M2.28571 23.7143C2.28571 19.5722 5.64357 16.2143 9.78571 16.2143H13.7857V22C13.7857 26.1421 10.4278 29.5 6.28571 29.5H2.28571V23.7143Z" stroke="#897942" stroke-opacity="0.5"/>
+                </svg>                
+                What we have
+            </h2>
+            <hr>
+            <h1 class="text-nowrap">CATEGORIES</h1>
+          </div>
+          <div class="categories-display__content">
+            <div class="row">
+              <div class="col-4">
+                <div class="category purple d-flex align-items-start flex-column">
+                  <h2>Desk</h2>
+                  <div class="image d-flex align-items-center w-100 h-100">
+                    <img class="img-fluid" src="img/desk.png" alt="Изображение стола">
+                  </div>
+                  <div class="text-end w-100 mt-auto">
+                    <a href="#" class="btn w-50">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="category yellow d-flex align-items-start flex-column">
+                  <h2>Chair</h2>
+                  <div class="image d-flex align-items-center justify-content-center w-100 h-100">
+                    <img class="img-fluid" src="img/chair.png" alt="Изображение стула">
+                  </div>
+                  <div class="text-end w-100 mt-auto">
+                    <a href="#" class="btn w-50">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="category blue d-flex align-items-start flex-column">
+                  <h2>Kitchenware</h2>
+                  <div class="image d-flex align-items-center justify-content-center w-100 h-100">
+                    <img class="img-fluid" src="img/kitchenware.png" alt="Изображение посуды">
+                  </div>
+                  <div class="text-end w-100 mt-auto">
+                    <a href="#" class="btn w-50">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-4">
+                <div class="category purple d-flex align-items-start flex-column">
+                  <h2>Book Shelf</h2>
+                  <div class="image d-flex align-items-center justify-content-center w-100 h-100">
+                    <img class="img-fluid" src="img/book-shelf.png" alt="Изображение шкафа">
+                  </div>
+                  <div class="text-end w-100 mt-auto">
+                    <a href="#" class="btn w-50">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="category yellow d-flex align-items-start flex-column">
+                  <h2>Electronics</h2>
+                  <div class="image d-flex align-items-center justify-content-center w-100 h-100">
+                    <img class="img-fluid" src="img/electronics.png" alt="Изображение радио">
+                  </div>
+                  <div class="text-end w-100 mt-auto">
+                    <a href="#" class="btn w-50">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="testimony-display">
-        <div class="container-fluid"></div>
+        <div class="container-fluid">
+          <div class="testimony-display__content">
+            <div class="title-line d-flex align-items-center justify-content-between">
+              <h2 class="text-nowrap">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 2.28571H6.28571C10.4278 2.28571 13.7857 5.64357 13.7857 9.78571V13.7857H8C3.85787 13.7857 0.5 10.4278 0.5 6.28571V2.28571Z" stroke="#897942" stroke-opacity="0.5"/>
+                  <path d="M16.2143 16.2143H22C26.1421 16.2143 29.5 19.5722 29.5 23.7143V27.7143H23.7143C19.5722 27.7143 16.2143 24.3564 16.2143 20.2143V16.2143Z" stroke="#897942" stroke-opacity="0.5"/>
+                  <path d="M16.2143 8C16.2143 3.85787 19.5722 0.5 23.7143 0.5H27.7143V6.28571C27.7143 10.4278 24.3564 13.7857 20.2143 13.7857H16.2143V8Z" stroke="#897942" stroke-opacity="0.5"/>
+                  <path d="M2.28571 23.7143C2.28571 19.5722 5.64357 16.2143 9.78571 16.2143H13.7857V22C13.7857 26.1421 10.4278 29.5 6.28571 29.5H2.28571V23.7143Z" stroke="#897942" stroke-opacity="0.5"/>
+                  </svg>                
+                  What they say
+              </h2>
+              <hr>
+              <h1 class="text-nowrap">TESTIMONY</h1>
+            </div>
+            <div class="row">
+              <div class="col-7">
+                <div class="row">
+                  <div class="col">
+                    <div class="image">
+                      <img class="img-fluid" src="img/review-img1.png" alt="Фотография комнаты">
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="image">
+                      <img class="img-fluid" src="img/review-img2.png" alt="Фотография комнаты">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="rewiews">
+                  <div class="">1</div>
+                  <div class="">2</div>
+                  <div class="">3</div>
+                  <div class="">4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <!-- <footer>
+    <footer>
       <div class="footer-line1 d-flex align-items-center">
         <div class="container-fluid">
           <div class="row align-items-center">
@@ -202,12 +386,14 @@
       <div class="footer-bg-img d-flex justify-content-end">
         <img src="img/footer-bg-image.png" alt="footer image">
       </div>
-    </footer> -->
+    </footer>
     
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- Slick slider JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Script -->
     <script src="scripts/script.js"></script>
 </body>

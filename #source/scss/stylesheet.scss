@@ -159,7 +159,6 @@ footer {
     }
 }
 main {
-    height: 1000px;
     .main-display__bg {
         z-index: -1;
         width: 100%;
@@ -214,6 +213,7 @@ main {
     }
     .about-us-display {
         margin-top: 144px;
+        padding-bottom: 120px;
         .about-us-display__content {
             h2 {
                 font-size: $fz_3;
@@ -233,6 +233,12 @@ main {
                     background-color: $color_yellow;
                     border-radius: 0px 120px;
                 }
+            }
+            .row2 {
+                margin-top: 170px;
+                .col-3 {
+                    height: 384px;
+                }
             }   
         }
         .bg-logo {
@@ -245,14 +251,81 @@ main {
             top: 400px;
             left: -68px;
         }
+        .bg3 {
+            background: url(../img/bg3.png) no-repeat right;
+            width: 100%;
+            height: 384px;
+            position: absolute;
+            top: 700px;
+            z-index: -1;
+            
+        }
+    }
+    .how-it-works-display__content {
+        .number {
+            h1 {
+                font-weight: 600;
+                font-size: 96px;
+                color: #FDEEEE;
+                top: 30px;
+                left: 7px;
+                z-index: -1;
+            }
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .btn {
+            @extend %btn-orange;
+            max-width: 212px;
+            margin: auto;
+            margin-top: 64px;
+        }
+    }
+    .categories-display {
+        margin-top: 120px;
+        .category {
+            border-radius: 0px 120px;
+            padding: 24px 16px 24px 0;
+            height: 400px;
+            h2 {
+                margin-left: 16px;
+                font-weight: 800;
+                font-size: 24px;
+                color: #3E3F43;
+            }
+            .btn {
+                @extend %btn-outline;
+            }
+        }
+        .purple {
+            background-color: $color_purple;
+        }
+        .yellow {
+            background-color: $color_yellow;
+        }
+        .blue {
+            background-color: $color_blue;
+        }
+    }
+    .testimony-display {
+        .testimony-display__content {
+            margin-top: 120px;
+            img {
+                border-radius: 80px 0px;
+                box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+            }
+        }
     }
     .title-line {
         margin-bottom: 40px;
         h1 {@extend %text_bg;}
         h2 {@extend %text_title;}
         hr {
-            max-width: 316px;
-            width: 27.43vw;
+            margin-left: 16px;
+            width: 100%;
             height: 1px;
             color: #000;
         }
