@@ -313,9 +313,74 @@ main {
     .testimony-display {
         .testimony-display__content {
             margin-top: 120px;
-            img {
+            margin-bottom: 120px;
+            .image img {
                 border-radius: 80px 0px;
                 box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+            }
+            .reviews {
+                .slide {
+                    height: 384px;
+                    .comment {
+                        border: 1px solid #A8DCEC;
+                        border-radius: 0px 80px;
+                        max-height: 280px;
+                        height: 100%;
+                        padding: 54px 16px;
+                        .comment__text p {
+                            font-weight: 600;
+                            font-size: 14px;
+                            color: #3E3F43;
+                            margin-top: 16px;
+                        }
+                        .comment__author {
+                            img {border-radius: 50px;}
+                            p {
+                                color: #AFAFAF;
+                                font-weight: 600;
+                                font-size: 12px;
+                                margin: 0;
+                                padding-left: 8px;
+                            }
+                        }
+                    }
+                }
+                .slick-arrow {
+                    position: absolute;
+                    top: 300px;
+                    z-index: 10;
+                    height: 19px;
+                    display: flex;
+                    font-size: 14px;
+                    border: none;
+                    background-color: unset;
+                    &.slick-next {
+                        right: 0;
+                        &::after {padding-left: 8px; content: url(../img/icons/slider-arrow-next.svg);}
+                    }
+                    &.slick-prev {
+                        &::before {padding-right: 8px; content: url(../img/icons/slider-arrow-prev.svg);}
+                    }
+                }
+                .slick-dots {
+                    z-index: 10;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 180px;
+                    list-style: none;
+                    padding: 0;
+                    position: absolute;
+                    right: 0;
+                    li {
+                        width: 40px;
+                        height: 8px;
+                        background-color: #E5E5E5;
+                        border-radius: 8px;
+                        button {display: none;}
+                    }
+                    .slick-active {background-color: #DAA520;}
+                }
             }
         }
     }

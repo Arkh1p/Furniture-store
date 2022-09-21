@@ -1,7 +1,8 @@
 $(document).ready(function(){
-    $('.rewiews').slick({
-        infinite: true,
+    $('.reviews').slick({
+        infinite: false,
         dots: true,
-        arrows: true
+        arrows: true,
+        draggable: false,
     });
   });
